@@ -57,7 +57,6 @@ if (conf === true) {
                 chekIn2.innerHTML = `21${flightStr2.innerHTML.slice(2, 5)}`
             } else {
                 chekIn2.innerHTML = `${timeAfter2}${flightStr2.innerHTML.slice(2, 5)}`
-                console.log(flightStr2);
             }
             
             
@@ -207,9 +206,9 @@ let chekIn = document.querySelector('#chekIn')
 let timeAfter1 = flightTime.slice(0, 2)
 let timeAfter = timeAfter1 - 3
 
-document.onkeydown = (evt) => {
-    evt = evt || window.event;
-    if (evt.keyCode == 13) {
+// document.onkeydown = (evt) => {
+//     evt = evt || window.event;
+//     if (evt.keyCode == 13) {
         if (timeAfter1 == '02') {
             chekIn.innerHTML = `23${time.innerHTML.slice(2, 5)}`
         } else if (timeAfter1 == '01') {
@@ -324,11 +323,5 @@ document.onkeydown = (evt) => {
             logo.className = 'logotype'
             logo.style.borderRadius = '15px'
         }
-    }
-}
-
-
-
-
-
-
+//     }
+//  }
