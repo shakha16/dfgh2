@@ -13,6 +13,25 @@ body {
     text-transform: uppercase;
 }
 
+#date {
+    width: 120px;
+    border: none;
+    color: blue;
+    font-size: 17px;
+    position: relative;
+    margin-left: 24px;
+}
+
+#date::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 35px;
+    opacity: 0;
+}
+.a {
+    transform: rotate(180deg);
+    margin-top: 10px;
+}
+
 .bilet {
     width: 1200px;
     height: 560px;
@@ -23,8 +42,8 @@ body {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    transform: rotate(180deg);   
     overflow: hidden;
+    transform: rotate(180deg);
 }
 
 
@@ -70,7 +89,15 @@ body {
 }
 
 .logotype {
-    width: 150px;
+    width: 152px;
+    height: 150px;
+    mix-blend-mode: darken;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.logotype22 {
+    width: 152px;
     height: 150px;
     mix-blend-mode: darken;
     object-fit: cover;
@@ -79,8 +106,8 @@ body {
 
 
 .logotype2 {
-    width: 300px;
-    height: 145px;
+    width: 262px;
+    height: 175px;
     mix-blend-mode: darken;
     object-fit: cover;
 }
@@ -90,6 +117,16 @@ h3 {
 }
 
 .llo {
+    width: 275px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.llo22 {
     width: 275px;
     height: 200px;
     overflow: hidden;
@@ -111,9 +148,11 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     justify-content: center;
     padding: 0 18px 0 50px;
+    text-align: center;
+    /* margin-top: -10px; */
 }
 
 .info {
@@ -126,18 +165,33 @@ h3 {
     /* margin-top: 65px; */
 }
 
-select {
+.select, #company, #company2 {
     all: unset;
     font-family: normal;
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -48px;
+    color: blue;
+    position: relative;
+    z-index: 123456789876543;
+}
+
+.select2 {
+    all: unset;
+    font-family: normal;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* margin-top: -48px; */
+    color: blue;
+    position: relative;
+    z-index: 123456789876543;
 }
 
 
 .flex {
     padding: 12px;
     width: 378px;
-    height: 120px;
+    height: 72px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -147,7 +201,7 @@ select {
 .flex2 {
     padding: 12px;
     width: 378px;
-    height: 75px;
+    height: 72px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -187,7 +241,7 @@ h2 {
 .all {
     display: flex;
     gap: 10px;
-    margin-top: -91px;
+    /* margin-top: -91px; */
 }
 
 .all2    {
@@ -199,12 +253,25 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: relative;
 }
 
 .two {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 34px;
+}
+
+.two2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.problema {
+    position: absolute;
+    top: 200px;
 }
 
 .contacts {
@@ -307,6 +374,22 @@ h2 {
 
 .r {
     position: absolute;
-    bottom: 14px;
+    bottom: 4px;
     margin-left: 205px;
+}
+
+.twoo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -30px;
+    align-items: center;
+}
+
+.onee {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -41px;
+    align-items: center;
 }
